@@ -11,7 +11,7 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
 
   color: #242424;
@@ -22,4 +22,139 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+ * {
+  box-sizing: border-box;
+ }
+
+body {
+  color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+ .container {
+  display: flex;
+  width: 1440px;
+  height: 496px;
+  padding: 36px 929px 316px 156px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+ }
+
+ .input > button {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #4E75FF;
+    color: #FFF;
+    
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+ }
+
+ .input > input {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+ }
+
+ .input {
+  display: flex;
+    align-items: flex-start;
+    gap: 8px;
+ }
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55px;
+}
+
+ .value {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+        
+ }
+
+ .label {
+line-height: 1.5;
+text-transform: uppercase;
+ }
+
+ .input > button:disabled {
+       background: #CFCFCF;
+      color: #989898;
+ }
+
+/* ---> Sanckbar */
+
+form {
+  display: flex;
+  flex-direction: column;
+ width: 360px;
+height: 40px;
+gap: 24px;
+margin-top: 24px;
+}
+
+.ms-input {
+  gap: 8px;
+  display: flex;
+flex-direction: column;
+}
+
+.ms-input > input {
+  width: 360px;
+  height: 40px;
+}
+
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  width: 360px;
+  height: 64px;
+}
+
+form > button {
+  display: flex;
+    width: 360px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+      background: #4E75FF;
+  color: #FFF;
+  
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
 }
