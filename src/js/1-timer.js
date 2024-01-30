@@ -10,6 +10,7 @@ const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 
+
 let userSelectedDate = 0;
 
 startBtn.disabled = true;
@@ -55,6 +56,8 @@ function handleTimer() {
     }    
   }, 1000)
   startBtn.disabled = true;  
+  datetimePicker.disabled = true;
+  
 }
 
 function addLeadingZero(value) {
